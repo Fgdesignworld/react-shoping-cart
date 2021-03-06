@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font: 62.5%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+#root {
+  margin: 0;
+  height: 100vh;
+}
+
+body, input, select, textarea {
+  font-size: 1.4rem;
+  font-family:  Helvetica, Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header""main""footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a:hover {
+  color: #ff8000;
+}
+
+header {
+  grid-area: header;
+  background: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background: #203040;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
