@@ -1,4 +1,4 @@
-// features1git pull origin
+// features
 
 function App() {
   return (
