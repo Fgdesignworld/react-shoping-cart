@@ -1,3 +1,3 @@
 # react-shoping-cart
 
-# it is fine
+# it is good
